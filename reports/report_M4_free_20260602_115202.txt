@@ -1,0 +1,55 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 160.7 s
+  Frames analysed  : 808
+  Average risk     : 31.6 / 100
+  Peak risk        : 64.7 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 23
+  Avg blink rate   : 9.7 /min
+
+  Alert flag counts:
+    ! HEAD TURNED          717 frames  (88.7%)
+    ! BLINK ANOMALY        521 frames  (64.5%)
+    ! NO FACE               91 frames  (11.3%)
+    ! GAZE AWAY             63 frames  (7.8%)
+    ! 2 FACES                9 frames  (1.1%)
+
+  Risk timeline (every 10 s):
+    t=   0.1s  [#-------------------]    7.5
+    t=  12.1s  [######--------------]   30.0
+    t=  20.4s  [####----------------]   22.5
+    t=  34.5s  [######--------------]   31.0
+    t=  40.0s  [######--------------]   30.1
+    t=  50.9s  [######--------------]   30.0
+    t=  61.6s  [######--------------]   31.9
+    t=  70.0s  [######--------------]   32.0
+    t=  80.7s  [#########-----------]   45.3
+    t=  91.5s  [############--------]   64.7
+    t= 102.5s  [##########----------]   52.8
+    t= 110.0s  [######--------------]   30.3
+    t= 120.4s  [####----------------]   20.1
+    t= 130.8s  [######--------------]   30.0
+    t= 140.0s  [######--------------]   30.0
+    t= 150.0s  [######--------------]   31.5
+    t= 160.7s  [######--------------]   30.0
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-06-02T11:49:22.853582 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 31.9%
+    #2   Time: 2026-06-02T11:49:34.026924 | Type: NO_FACE | Severity: LOW | Risk: 20.0%
+    #3   Time: 2026-06-02T11:49:41.867688 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 30.1%
+    #4   Time: 2026-06-02T11:49:48.347879 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 31.3%
+    #5   Time: 2026-06-02T11:50:01.355291 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 32.0%
+    #6   Time: 2026-06-02T11:50:18.248045 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 31.9%
+    #7   Time: 2026-06-02T11:50:47.609395 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.7%
+    #8   Time: 2026-06-02T11:50:55.405798 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 57.9%
+    #9   Time: 2026-06-02T11:51:00.642104 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 52.8%
+    #10  Time: 2026-06-02T11:51:22.699811 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 34.7%
+    #11  Time: 2026-06-02T11:51:29.013630 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #12  Time: 2026-06-02T11:51:51.525256 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 32.2%
+
+    Total Alarms: 12
+============================================================

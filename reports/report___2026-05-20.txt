@@ -1,0 +1,21 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 28.7 s
+  Frames analysed  : 242
+  Average risk     : 48.3 / 100
+  Peak risk        : 65.0 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 9
+  Avg blink rate   : 23.6 /min
+
+  Alert flag counts:
+    ! HEAD TURNED          242 frames  (100.0%)
+    ! GAZE AWAY            132 frames  (54.5%)
+    ! BLINK ANOMALY         42 frames  (17.4%)
+
+  Risk timeline (every 10 s):
+    t=   0.0s  [#-------------------]    7.5
+    t=  10.1s  [###########---------]   56.8
+    t=  20.1s  [#######-------------]   38.1
+============================================================

@@ -1,0 +1,49 @@
+MODEL ACCURACY REPORT
+============================================================
+
+Test 1: Face Detection — Look straight at camera
+  Status : PASS
+  Detail : Face detected in 100.0% (need >=70%)
+
+Test 2: No Face Detection — Cover camera with hand
+  Status : PASS
+  Detail : Face detected in 11.6% (need <=30%)
+
+Test 3: Blink Detection — Blink slowly 5 times
+  Status : FAIL
+  Detail : Detected 0 blinks (need >=3)
+
+Test 4: Gaze Detection — Look LEFT
+  Status : PASS
+  Detail : Looking away 79.6% (need >=60%)
+
+Test 5: Gaze Detection — Look RIGHT
+  Status : PASS
+  Detail : Looking away 100.0% (need >=60%)
+
+Test 6: Gaze Detection — Look straight
+  Status : PASS
+  Detail : Looking away 0.0% (need <=20%)
+
+Test 7: Head Pose — Turn head LEFT
+  Status : PASS
+  Detail : Head turned 96.1% (need >=60%)
+
+Test 8: Head Pose — Turn head RIGHT
+  Status : PASS
+  Detail : Head turned 96.0% (need >=60%)
+
+Test 9: Head Pose — Look straight
+  Status : PASS
+  Detail : Head turned 0.0% (need <=20%)
+
+Test 10: Risk Score — Cheat (look away + turn head)
+  Status : FAIL
+  Detail : Avg risk 32.4 (need >=40)
+
+Test 11: Risk Score — Normal (look straight)
+  Status : PASS
+  Detail : Avg risk 24.3 (need <=25)
+
+Overall Accuracy: 81.8%
+Verdict: EXCELLENT

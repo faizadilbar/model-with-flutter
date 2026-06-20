@@ -1,0 +1,34 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 50.2 s
+  Frames analysed  : 529
+  Average risk     : 35.8 / 100
+  Peak risk        : 64.9 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 7
+  Avg blink rate   : 4.5 /min
+
+  Alert flag counts:
+    ! HEAD TURNED          529 frames  (100.0%)
+    ! BLINK ANOMALY        529 frames  (100.0%)
+    ! GAZE AWAY             90 frames  (17.0%)
+
+  Risk timeline (every 10 s):
+    t=   0.1s  [###-----------------]   16.2
+    t=  11.4s  [############--------]   64.6
+    t=  20.0s  [######--------------]   30.0
+    t=  30.0s  [######--------------]   30.0
+    t=  41.7s  [############--------]   63.9
+    t=  50.0s  [######--------------]   30.0
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-05-24T15:25:24.601660 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #2   Time: 2026-05-24T15:25:28.356980 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.8%
+    #3   Time: 2026-05-24T15:25:48.791544 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 44.4%
+    #4   Time: 2026-05-24T15:25:54.346798 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 63.9%
+
+    Total Alarms: 4
+============================================================

@@ -1,0 +1,46 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 70.8 s
+  Frames analysed  : 1598
+  Average risk     : 41.8 / 100
+  Peak risk        : 65.0 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 25
+  Avg blink rate   : 17.5 /min
+
+  Alert flag counts:
+    ! HEAD TURNED         1590 frames  (99.5%)
+    ! GAZE AWAY            543 frames  (34.0%)
+    ! BLINK ANOMALY        146 frames  (9.1%)
+    ! NO FACE                8 frames  (0.5%)
+    ! 2 FACES                8 frames  (0.5%)
+    ! 3 FACES                1 frames  (0.1%)
+
+  Risk timeline (every 10 s):
+    t=   0.1s  [#-------------------]    7.5
+    t=  10.0s  [######--------------]   30.1
+    t=  20.0s  [######--------------]   30.0
+    t=  30.0s  [######--------------]   30.0
+    t=  40.0s  [######--------------]   30.0
+    t=  50.0s  [############--------]   62.2
+    t=  60.0s  [############--------]   63.1
+    t=  70.0s  [######--------------]   30.4
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-05-24T09:26:50.470683 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #2   Time: 2026-05-24T09:26:53.494453 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.9%
+    #3   Time: 2026-05-24T09:26:58.396046 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 64.4%
+    #4   Time: 2026-05-24T09:27:02.981887 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #5   Time: 2026-05-24T09:27:19.273558 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 37.2%
+    #6   Time: 2026-05-24T09:27:24.826813 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 31.9%
+    #7   Time: 2026-05-24T09:27:36.083208 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.7%
+    #8   Time: 2026-05-24T09:27:39.388490 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 62.9%
+    #9   Time: 2026-05-24T09:27:43.931528 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.7%
+    #10  Time: 2026-05-24T09:27:51.876709 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 64.4%
+    #11  Time: 2026-05-24T09:27:55.043340 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 36.5%
+
+    Total Alarms: 11
+============================================================

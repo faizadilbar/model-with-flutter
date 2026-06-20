@@ -1,0 +1,25 @@
+DATASET VALIDATION REPORT
+============================================================
+
+Dataset       : MRL Eye Dataset
+Source        : kaggle.com/datasets/akashshingha850/mrl-eye-dataset
+License       : MIT
+
+EAR Threshold : 0.2
+
+RESULTS
+----------------------------------------
+Awake (open eyes)
+  Images tested : 300
+  Correct       : 0
+  Accuracy      : 0.0%
+  Avg EAR       : 0.0000
+
+Sleepy (closed eyes)
+  Images tested : 300
+  Correct       : 0
+  Accuracy      : 0.0%
+  Avg EAR       : 0.0000
+
+Overall Accuracy : 0.0%
+Verdict          : POOR — Check lighting or threshold

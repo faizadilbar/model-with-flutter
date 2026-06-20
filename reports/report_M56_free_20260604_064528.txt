@@ -1,0 +1,57 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 74.0 s
+  Frames analysed  : 646
+  Average risk     : 32.0 / 100
+  Peak risk        : 65.0 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 5
+  Avg blink rate   : 3.5 /min
+
+  Alert flag counts:
+    ! BLINK ANOMALY        646 frames  (100.0%)
+    ! HEAD TURNED          568 frames  (87.9%)
+    ! NO FACE               78 frames  (12.1%)
+    ! GAZE AWAY             52 frames  (8.0%)
+
+  Risk timeline (every 10 s):
+    t=   0.0s  [#-------------------]    6.0
+    t=  10.7s  [######--------------]   30.0
+    t=  20.0s  [######--------------]   30.1
+    t=  30.0s  [######--------------]   30.9
+    t=  40.0s  [######--------------]   30.0
+    t=  51.1s  [######--------------]   30.0
+    t=  60.2s  [######--------------]   30.0
+    t=  70.1s  [######--------------]   30.0
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-06-04T06:44:14.192101 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 23.8%
+    #2   Time: 2026-06-04T06:44:17.202852 | Type: HEAD_TURN | Severity: HIGH | Risk: 24.1%
+    #3   Time: 2026-06-04T06:44:20.221709 | Type: HEAD_TURN | Severity: HIGH | Risk: 24.1%
+    #4   Time: 2026-06-04T06:44:23.252304 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #5   Time: 2026-06-04T06:44:26.281355 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #6   Time: 2026-06-04T06:44:29.352259 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 60.7%
+    #7   Time: 2026-06-04T06:44:32.355058 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.7%
+    #8   Time: 2026-06-04T06:44:35.369464 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #9   Time: 2026-06-04T06:44:38.726700 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #10  Time: 2026-06-04T06:44:42.553944 | Type: HEAD_TURN | Severity: HIGH | Risk: 33.8%
+    #11  Time: 2026-06-04T06:44:45.581199 | Type: HEAD_TURN | Severity: HIGH | Risk: 38.8%
+    #12  Time: 2026-06-04T06:44:48.585321 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.8%
+    #13  Time: 2026-06-04T06:44:51.626628 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #14  Time: 2026-06-04T06:44:54.650637 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #15  Time: 2026-06-04T06:44:57.699725 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #16  Time: 2026-06-04T06:45:00.693044 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #17  Time: 2026-06-04T06:45:03.698074 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #18  Time: 2026-06-04T06:45:06.743326 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #19  Time: 2026-06-04T06:45:09.809160 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #20  Time: 2026-06-04T06:45:12.855534 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #21  Time: 2026-06-04T06:45:15.854075 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #22  Time: 2026-06-04T06:45:19.459209 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #23  Time: 2026-06-04T06:45:22.478446 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #24  Time: 2026-06-04T06:45:26.149050 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+
+    Total Alarms: 24
+============================================================

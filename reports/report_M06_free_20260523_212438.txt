@@ -1,0 +1,40 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 86.4 s
+  Frames analysed  : 542
+  Average risk     : 31.4 / 100
+  Peak risk        : 61.5 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 3
+  Avg blink rate   : 4.1 /min
+
+  Alert flag counts:
+    ! HEAD TURNED          542 frames  (100.0%)
+    ! BLINK ANOMALY        505 frames  (93.2%)
+    ! GAZE AWAY             25 frames  (4.6%)
+
+  Risk timeline (every 10 s):
+    t=   0.1s  [#-------------------]    7.5
+    t=  12.1s  [############--------]   61.5
+    t=  20.7s  [#########-----------]   47.9
+    t=  33.8s  [######--------------]   32.0
+    t=  41.3s  [######--------------]   31.1
+    t=  52.3s  [######--------------]   30.0
+    t=  61.4s  [######--------------]   30.0
+    t=  70.0s  [######--------------]   30.0
+    t=  81.0s  [######--------------]   30.0
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-05-23T21:23:20.975793 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 61.5%
+    #2   Time: 2026-05-23T21:23:27.311168 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 53.9%
+    #3   Time: 2026-05-23T21:23:33.714889 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #4   Time: 2026-05-23T21:23:41.021179 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 32.0%
+    #5   Time: 2026-05-23T21:24:03.723676 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #6   Time: 2026-05-23T21:24:10.437165 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #7   Time: 2026-05-23T21:24:15.064128 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+
+    Total Alarms: 7
+============================================================

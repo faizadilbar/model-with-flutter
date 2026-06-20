@@ -1,0 +1,85 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 270.3 s
+  Frames analysed  : 3619
+  Average risk     : 35.6 / 100
+  Peak risk        : 65.0 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 41
+  Avg blink rate   : 7.4 /min
+
+  Alert flag counts:
+    ! HEAD TURNED         3509 frames  (97.0%)
+    ! BLINK ANOMALY       2098 frames  (58.0%)
+    ! GAZE AWAY            614 frames  (17.0%)
+    ! NO FACE              110 frames  (3.0%)
+    ! 2 FACES                2 frames  (0.1%)
+
+  Risk timeline (every 10 s):
+    t=   0.0s  [###-----------------]   16.2
+    t=  11.4s  [########------------]   41.2
+    t=  20.0s  [###########---------]   58.8
+    t=  30.0s  [###########---------]   56.3
+    t=  40.3s  [############--------]   64.9
+    t=  50.0s  [######--------------]   30.0
+    t=  60.0s  [##########----------]   50.2
+    t=  70.0s  [######--------------]   30.0
+    t=  80.0s  [######--------------]   30.0
+    t=  90.0s  [######--------------]   33.2
+    t= 100.0s  [######--------------]   30.7
+    t= 110.0s  [#########-----------]   48.4
+    t= 121.0s  [######--------------]   30.0
+    t= 132.4s  [############--------]   64.6
+    t= 140.0s  [######--------------]   30.0
+    t= 150.0s  [###########---------]   56.8
+    t= 160.2s  [######--------------]   32.7
+    t= 170.2s  [############--------]   62.9
+    t= 180.0s  [##########----------]   51.6
+    t= 190.2s  [#########-----------]   49.0
+    t= 200.0s  [#######-------------]   36.6
+    t= 210.3s  [############--------]   64.1
+    t= 220.9s  [###########---------]   55.9
+    t= 230.0s  [######--------------]   30.0
+    t= 240.0s  [######--------------]   30.0
+    t= 250.3s  [######--------------]   32.5
+    t= 261.2s  [######--------------]   30.0
+    t= 270.0s  [######--------------]   30.5
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-05-25T19:47:09.762665 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #2   Time: 2026-05-25T19:47:26.465601 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.9%
+    #3   Time: 2026-05-25T19:47:50.631496 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.3%
+    #4   Time: 2026-05-25T19:48:02.232634 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #5   Time: 2026-05-25T19:48:10.064795 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #6   Time: 2026-05-25T19:48:25.805562 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 60.4%
+    #7   Time: 2026-05-25T19:48:32.201063 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #8   Time: 2026-05-25T19:48:47.251547 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #9   Time: 2026-05-25T19:48:57.896257 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #10  Time: 2026-05-25T19:49:02.034395 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.8%
+    #11  Time: 2026-05-25T19:49:09.615527 | Type: NO_FACE | Severity: LOW | Risk: 20.0%
+    #12  Time: 2026-05-25T19:49:20.937298 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 42.9%
+    #13  Time: 2026-05-25T19:49:24.171588 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.7%
+    #14  Time: 2026-05-25T19:49:34.418354 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #15  Time: 2026-05-25T19:49:44.236011 | Type: NO_FACE | Severity: LOW | Risk: 20.0%
+    #16  Time: 2026-05-25T19:49:54.274386 | Type: NO_FACE | Severity: LOW | Risk: 20.0%
+    #17  Time: 2026-05-25T19:49:59.083870 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.3%
+    #18  Time: 2026-05-25T19:50:02.179225 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #19  Time: 2026-05-25T19:50:05.225509 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #20  Time: 2026-05-25T19:50:17.391053 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 64.1%
+    #21  Time: 2026-05-25T19:50:20.403690 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #22  Time: 2026-05-25T19:50:27.446647 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 55.9%
+    #23  Time: 2026-05-25T19:50:32.130581 | Type: NO_FACE | Severity: LOW | Risk: 20.0%
+    #24  Time: 2026-05-25T19:50:35.729506 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #25  Time: 2026-05-25T19:50:38.868280 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #26  Time: 2026-05-25T19:50:41.935157 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #27  Time: 2026-05-25T19:50:49.222442 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 62.4%
+    #28  Time: 2026-05-25T19:50:56.380831 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 32.5%
+    #29  Time: 2026-05-25T19:51:08.235505 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #30  Time: 2026-05-25T19:51:11.329532 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #31  Time: 2026-05-25T19:51:14.374087 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.4%
+
+    Total Alarms: 31
+============================================================

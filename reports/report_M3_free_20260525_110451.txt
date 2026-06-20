@@ -1,0 +1,73 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 258.5 s
+  Frames analysed  : 5134
+  Average risk     : 31.3 / 100
+  Peak risk        : 64.9 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 32
+  Avg blink rate   : 7.5 /min
+
+  Alert flag counts:
+    ! HEAD TURNED         5134 frames  (100.0%)
+    ! BLINK ANOMALY       4019 frames  (78.3%)
+    ! GAZE AWAY            188 frames  (3.7%)
+
+  Risk timeline (every 10 s):
+    t=   0.0s  [#-------------------]    7.5
+    t=  10.0s  [######--------------]   30.0
+    t=  21.6s  [############--------]   64.6
+    t=  30.3s  [###########---------]   56.0
+    t=  40.0s  [######--------------]   30.0
+    t=  50.1s  [######--------------]   30.0
+    t=  60.0s  [######--------------]   30.0
+    t=  70.0s  [######--------------]   30.0
+    t=  80.0s  [######--------------]   30.0
+    t=  90.8s  [######--------------]   30.5
+    t= 100.0s  [######--------------]   30.0
+    t= 110.0s  [######--------------]   30.0
+    t= 120.0s  [######--------------]   30.0
+    t= 131.1s  [######--------------]   30.7
+    t= 140.0s  [###########---------]   56.7
+    t= 150.0s  [######--------------]   30.0
+    t= 160.2s  [######--------------]   30.0
+    t= 171.1s  [######--------------]   30.0
+    t= 180.0s  [######--------------]   30.0
+    t= 190.0s  [######--------------]   30.0
+    t= 200.0s  [######--------------]   30.0
+    t= 210.0s  [######--------------]   30.9
+    t= 220.0s  [######--------------]   30.0
+    t= 230.0s  [#######-------------]   37.5
+    t= 240.0s  [######--------------]   30.0
+    t= 250.1s  [######--------------]   30.0
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-05-25T11:00:35.950819 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #2   Time: 2026-05-25T11:00:51.345728 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #3   Time: 2026-05-25T11:00:57.212703 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.7%
+    #4   Time: 2026-05-25T11:01:16.741612 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 60.3%
+    #5   Time: 2026-05-25T11:01:24.023759 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #6   Time: 2026-05-25T11:02:01.941737 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.5%
+    #7   Time: 2026-05-25T11:02:27.001341 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #8   Time: 2026-05-25T11:02:42.173466 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.7%
+    #9   Time: 2026-05-25T11:02:48.586405 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 63.0%
+    #10  Time: 2026-05-25T11:02:52.622402 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+    #11  Time: 2026-05-25T11:02:56.743682 | Type: HEAD_TURN | Severity: HIGH | Risk: 64.7%
+    #12  Time: 2026-05-25T11:03:03.970468 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 63.2%
+    #13  Time: 2026-05-25T11:03:07.081818 | Type: HEAD_TURN | Severity: HIGH | Risk: 32.0%
+    #14  Time: 2026-05-25T11:03:10.113394 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #15  Time: 2026-05-25T11:03:13.155568 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #16  Time: 2026-05-25T11:03:16.172638 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #17  Time: 2026-05-25T11:03:19.184729 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #18  Time: 2026-05-25T11:03:22.185389 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #19  Time: 2026-05-25T11:03:25.206429 | Type: HEAD_TURN | Severity: HIGH | Risk: 30.0%
+    #20  Time: 2026-05-25T11:03:58.242965 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #21  Time: 2026-05-25T11:04:01.350461 | Type: HEAD_TURN | Severity: HIGH | Risk: 33.9%
+    #22  Time: 2026-05-25T11:04:20.994588 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 61.8%
+    #23  Time: 2026-05-25T11:04:26.564534 | Type: GAZE_AWAY | Severity: MEDIUM | Risk: 64.6%
+
+    Total Alarms: 23
+============================================================

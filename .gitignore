@@ -1,0 +1,47 @@
+﻿# FLUTTER/DART
+.dart_tool/
+.pub/
+.pub-cache/
+build/
+*.lock
+.idea/
+.vscode/
+
+# ==========================================
+data/
+dataset/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.pkl
+*.h5
+*.npy
+*.npz
+*.csv
+*.xlsx
+*.xls
+*.pickle
+*.joblib
+
+# PYTHON
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+.venv/
+
+# OS FILES
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# IDE
+.vscode/
+.idea/

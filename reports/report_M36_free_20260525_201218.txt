@@ -1,0 +1,46 @@
+============================================================
+  EYE MOVEMENT DETECTOR — SESSION REPORT
+============================================================
+  Duration         : 139.8 s
+  Frames analysed  : 1453
+  Average risk     : 31.6 / 100
+  Peak risk        : 64.4 / 100
+  High-risk frames : 0 (0.0%)
+  Total blinks     : 16
+  Avg blink rate   : 4.7 /min
+
+  Alert flag counts:
+    ! HEAD TURNED         1450 frames  (99.8%)
+    ! BLINK ANOMALY       1274 frames  (87.7%)
+    ! GAZE AWAY             69 frames  (4.7%)
+    ! NO FACE                3 frames  (0.2%)
+    ! 2 FACES                2 frames  (0.1%)
+
+  Risk timeline (every 10 s):
+    t=   0.0s  [#-------------------]    7.5
+    t=  10.0s  [######--------------]   30.0
+    t=  20.0s  [######--------------]   30.0
+    t=  30.0s  [#######-------------]   37.2
+    t=  40.0s  [######--------------]   30.0
+    t=  50.0s  [######--------------]   30.0
+    t=  60.0s  [######--------------]   30.0
+    t=  70.0s  [######--------------]   30.0
+    t=  83.0s  [######--------------]   30.7
+    t=  90.5s  [######--------------]   30.4
+    t= 100.1s  [######--------------]   30.0
+    t= 110.0s  [######--------------]   30.0
+    t= 121.6s  [#########-----------]   48.7
+    t= 130.0s  [######--------------]   30.0
+
+------------------------------------------------------------
+  ALARM / VIOLATION DETAILS
+------------------------------------------------------------
+    #1   Time: 2026-05-25T20:10:26.918754 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 59.0%
+    #2   Time: 2026-05-25T20:11:18.212169 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.7%
+    #3   Time: 2026-05-25T20:11:23.647463 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.5%
+    #4   Time: 2026-05-25T20:11:29.797758 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #5   Time: 2026-05-25T20:11:36.405927 | Type: HEAD_TURN | Severity: MEDIUM | Risk: 30.0%
+    #6   Time: 2026-05-25T20:11:57.258859 | Type: MULTIPLE_FACES | Severity: HIGH | Risk: 48.7%
+
+    Total Alarms: 6
+============================================================
