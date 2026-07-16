@@ -1,4 +1,4 @@
-FROM python:3.14.3-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -16,6 +16,6 @@ COPY . .
 
 ENV PORT=5000
 
-EXPOSE 5000
+EXPOSE $PORT
 
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "flask_server:app"]
+CMD gunicorn -b 0.0.0.0:$PORT flask_server:app
