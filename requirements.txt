@@ -6,7 +6,7 @@ gunicorn==23.0.0
 
 # Computer Vision (headless for server - no GUI)
 numpy==1.26.4
-opencv-python-headless==4.10.0.84
+opencv-python
 mediapipe==0.10.18
 Pillow==12.2.0
 scipy==1.17.1
