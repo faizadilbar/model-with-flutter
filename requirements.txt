@@ -1,4 +1,4 @@
-﻿# Core web server
+# Core web server
 Flask==3.1.3
 flask-cors==6.0.2
 Werkzeug==3.1.8
@@ -6,7 +6,8 @@ gunicorn==23.0.0
 
 # Computer Vision (headless for server - no GUI)
 numpy==1.26.4
-opencv-python
+- opencv-python
++ opencv-python-headless
 mediapipe==0.10.18
 Pillow==12.2.0
 scipy==1.17.1
