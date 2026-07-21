@@ -206,6 +206,7 @@ class ExamSession:
                 'max_risk': round(float(self.state.session_report.max_risk()), 1) if self.state.session_report else 0.0,
                 'total_alarms': len(self.state.alarm_history_list),
                 'blink_count': int(result.get('blink_count', 0)),
+                'blink_rate': round(float(result.get('blink_rate', 0.0)), 1),
                 'last_alarm_type': result.get('last_alarm_type', 'NONE'),
                 'flags': result.get('flags', {
                     'gaze_away': False,
@@ -213,6 +214,11 @@ class ExamSession:
                     'multiple_faces': False,
                     'no_face': False
                 }),
+                # Cumulative session counts — used by web frontend live dashboard
+                'gaze_away_count':     self.state.gaze_away_count,
+                'head_turn_count':     self.state.head_turn_count,
+                'no_face_count':       self.state.no_face_count,
+                'multiple_face_count': self.state.multi_face_count,
                 'status': 'active',
                 'face_center_x': float(result.get('face_center_x', 0.5)),
                 'face_center_y': float(result.get('face_center_y', 0.5))

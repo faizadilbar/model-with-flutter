@@ -19,7 +19,7 @@ REFINE_LANDMARKS = True             # Enable refined landmark detection
 # =========================================================
 # EYE ASPECT RATIO (Blink Detection)
 # =========================================================
-EAR_BLINK_THRESHOLD = 0.20          # EAR value below this = eye closed
+EAR_BLINK_THRESHOLD = 0.24          # EAR value below this = eye closed
 EAR_CONSEC_FRAMES = 1               # Consecutive frames to confirm blink
 NORMAL_BLINK_RATE_MIN = 10          # Minimum normal blinks per minute
 NORMAL_BLINK_RATE_MAX = 30          # Maximum normal blinks per minute

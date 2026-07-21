@@ -36,13 +36,14 @@ class ProctoringDetector:
         self.consecutive_multiple_faces = 0
         self.consecutive_no_face = 0
         
-        self.is_calibrated = False
+        self.is_calibrated = True
         self.calibration_samples = []
         self.is_remote = not calibrate_locally
         
         # Perform initial baseline calibration if run locally
         if calibrate_locally:
             self._calibrate()
+            self.is_calibrated = True
         else:
             print("[INFO] Remote mode: Dynamic calibration enabled.")
 
@@ -85,64 +86,18 @@ class ProctoringDetector:
         h, w = frame.shape[:2]
         results = process_frame(self.face_mesh, frame)
         
-        # Asynchronous/Dynamic Calibration logic for remote uploads
-        if not self.is_calibrated:
+        # Dynamically refine baseline_yaw over first 5 frames passively, without blocking predictions!
+        if len(self.calibration_samples) < 5:
             if results.multi_face_landmarks:
                 landmarks = results.multi_face_landmarks[0].landmark
                 head_yaw, _, _ = estimate_head_pose(
                     landmarks, HEAD_POSE_INDICES, w, h, self.cam_matrix
                 )
                 self.calibration_samples.append(head_yaw)
-                
-                if len(self.calibration_samples) >= 5:  # 5 samples = ~10 seconds of remote calibration
+                if len(self.calibration_samples) == 5:
                     self.baseline_yaw = float(np.mean(self.calibration_samples))
                     self.scorer.set_baseline(self.baseline_yaw)
-                    self.is_calibrated = True
-                    print(f"[CAL] RemoteSession successfully calibrated baseline yaw: {self.baseline_yaw:.1f} degrees")
-            
-            # Return calibration progress output
-            flags = {
-                "gaze_away": False,
-                "head_turn": False,
-                "multiple_faces": False,
-                "no_face": not results.multi_face_landmarks
-            }
-            consecutive_frames = {
-                "gaze_away": 0,
-                "head_turn": 0,
-                "multiple_faces": 0,
-                "no_face": 0
-            }
-            output = DetectorOutput(
-                face_count=len(results.multi_face_landmarks) if results.multi_face_landmarks else 0,
-                multiple_faces=False,
-                no_face=not results.multi_face_landmarks,
-                looking_away=False,
-                head_turn=False,
-                head_yaw=0.0,
-                head_pitch=0.0,
-                gaze_yaw=0.0,
-                gaze_pitch=0.0,
-                blink_count=0,
-                risk_score=0.0,
-                max_risk=0.0,
-                alarm_level="calibrating",  # Special status indicating calibration
-                flags=flags,
-                consecutive_frames=consecutive_frames,
-                total_alarms=0,
-                last_alarm_type="NONE",
-                last_alarm_time=0.0,
-                timestamp=time.time(),
-                face_center_x=0.5,
-                face_center_y=0.5
-            )
-            output.ear = 0.0
-            output.blink_rate = 0.0
-            output.raw_risk = 0.0
-            output.baseline_yaw = self.baseline_yaw
-            output.active_flags = []
-            output.new_violation = None
-            return output
+                    print(f"[CAL] RemoteSession dynamically updated baseline yaw to: {self.baseline_yaw:.1f} degrees")
         
         face_count = 0
         ear = 0.0
