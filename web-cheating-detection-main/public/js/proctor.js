@@ -71,17 +71,25 @@
         }
     }
 
-    // ── START SESSION ─────────────────────────────────────────────────────
-    async function startSession() {
-        try {
-            // Read quiz meta from page globals (set by take-quiz.blade.php)
-            const quizCode   = window.PROCTOR_QUIZ_CODE   || '';
-            const quizId     = window.PROCTOR_QUIZ_ID     || '';
-            const courseName = window.PROCTOR_COURSE_NAME || '';
-            const quizDate   = window.PROCTOR_QUIZ_DATE   || '';
-            const startTime  = window.PROCTOR_START_TIME  || '';
-            const endTime    = window.PROCTOR_END_TIME    || '';
+    // ── START SESSION (with Fallback Session ID & Guaranteed Timer) ───────
+    let proctoringSessionId = null;
 
+    async function startSession() {
+        // Reset state for clean start on re-entry
+        if (frameTimer) clearInterval(frameTimer);
+        if (metricsTimer) clearInterval(metricsTimer);
+        frameTimer = null;
+        metricsTimer = null;
+        sessionStarted = false;
+
+        const quizCode   = window.PROCTOR_QUIZ_CODE   || '';
+        const quizId     = window.PROCTOR_QUIZ_ID     || '';
+        const courseName = window.PROCTOR_COURSE_NAME || '';
+        const quizDate   = window.PROCTOR_QUIZ_DATE   || '';
+        const startTime  = window.PROCTOR_START_TIME  || '';
+        const endTime    = window.PROCTOR_END_TIME    || '';
+
+        try {
             const res = await fetch(window.PROCTOR_START_URL, {
                 method: 'POST',
                 headers: {
@@ -100,22 +108,30 @@
             });
 
             const data = await res.json();
-            if (data.status === true || data.status === 1) {
-                sessionStarted = true;
-                console.log('[Proctor] Session started:', data);
-                startFrameCapture();
-                startMetricsPoll();
-            } else {
-                console.warn('[Proctor] Session start failed:', data);
+            if (data && (data.status === true || data.status === 1 || data.session_id)) {
+                proctoringSessionId = data.session_id || data.id || null;
+                console.log('[Proctor] Session started successfully:', data);
             }
         } catch (err) {
-            console.warn('[Proctor] startSession error:', err.message);
+            console.warn('[Proctor] startSession delayed/failed, using fallback session ID:', err.message);
         }
+
+        // Guaranteed Fallback Session ID if API response was delayed/failed so frame uploading NEVER stops
+        if (!proctoringSessionId) {
+            proctoringSessionId = Math.floor(Date.now() / 1000);
+        }
+
+        sessionStarted = true;
+        startFrameCapture();
+        startMetricsPoll();
     }
 
     // ── FRAME CAPTURE ─────────────────────────────────────────────────────
     function startFrameCapture() {
-        frameTimer = setInterval(captureAndSend, FRAME_INTERVAL_MS);
+        if (!frameTimer) {
+            frameTimer = setInterval(captureAndSend, FRAME_INTERVAL_MS);
+            console.log('[Proctor] Frame upload timer started for Session #', proctoringSessionId);
+        }
     }
 
     async function captureAndSend() {
